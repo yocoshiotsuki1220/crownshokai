@@ -1,25 +1,46 @@
-import Link from "next/link";
-
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#F3EFE6] text-[#0A0A0C]">
-      <div className="mx-auto flex max-w-xl flex-col items-center px-6 py-12">
-        <img
-          src="/logo.png"
-          alt="クラウン商会"
-          className="mb-6 h-28 w-28"
-        />
+    <main className="min-h-screen bg-[#E8E0D4] flex flex-col items-center justify-start pt-16">
+      
+      {/* ロゴ */}
+      <img
+        src="/logo.png"
+        alt="クラウン商会"
+        className="w-32 h-32 mb-10"
+      />
 
-        <h1 className="mb-2 text-xl font-semibold tracking-wide">クラウン商会</h1>
-        <p className="mb-8 text-sm opacity-70">入口</p>
+      {/* QR縦並び */}
+      <div className="flex flex-col items-center gap-8">
 
-        <Link
-          href="/queue"
-          className="rounded-2xl border border-black/10 bg-white px-4 py-4 text-center text-base font-medium shadow-sm transition hover:shadow"
-        >
-          行列ウォッチへ
-        </Link>
+        <div className="flex flex-col items-center">
+          <img
+            src="/qr/queue.png"
+            alt="行列ウォッチ"
+            className="w-24 h-24"
+          />
+          <div className="text-xs mt-2 text-zinc-700">行列ウォッチ</div>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <img
+            src="/qr/kondake.png"
+            alt="こんだけ"
+            className="w-24 h-24 opacity-40"
+          />
+          <div className="text-xs mt-2 text-zinc-500">こんだけ</div>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <img
+            src="/qr/pg.png"
+            alt="PG"
+            className="w-24 h-24 opacity-40"
+          />
+          <div className="text-xs mt-2 text-zinc-500">PG</div>
+        </div>
+
       </div>
+
     </main>
   );
 }
