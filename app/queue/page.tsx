@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+﻿import { redirect } from "next/navigation";
 
-export default function Home() {
-  redirect("/queue");
+export default function Queue() {
+  redirect("https://queue.crownshokai.jp");
 }
