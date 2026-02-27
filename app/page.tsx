@@ -1,4 +1,7 @@
 ﻿import Image from "next/image";
+<div style={{ fontSize: 14, color: "#222", marginBottom: 18 }}>
+  クラウン商会
+</div>
 
 export default function Home() {
   return (
