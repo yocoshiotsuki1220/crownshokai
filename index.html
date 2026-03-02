@@ -1,74 +1,57 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>クラウン商会株式会社</title>
+import Image from "next/image";
 
-<style>
-body {
-    margin: 0;
-    background-color: #cfc6b8;
-    font-family: sans-serif;
+export default function Home() {
+  return (
+    <main
+      style={{
+        background: "#E8E0D4", // 生成り
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "48px 16px",
+      }}
+    >
+      {/* ロゴ（大きめ） */}
+      <Image
+        src="/logo.png"
+        alt="クラウン商会"
+        width={280}
+        height={280}
+        priority
+        style={{ marginBottom: 64 }}
+      />
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+      {/* QRだけ */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 28,
+          alignItems: "center",
+        }}
+      >
+        <a href="https://queue.crownshokai.jp" aria-label="行列ウォッチ">
+          <Image src="/qr/queue.png" alt="" width={84} height={84} />
+        </a>
+
+        <a
+          href="https://kondake.crownshokai.jp"
+          aria-label="こんだけ"
+          style={{ opacity: 0.5 }}
+        >
+          <Image src="/qr/kondake.png" alt="" width={84} height={84} />
+        </a>
+
+        <a
+          href="https://pg.crownshokai.jp"
+          aria-label="PointGathering"
+          style={{ opacity: 0.5 }}
+        >
+          <Image src="/qr/pg.png" alt="" width={84} height={84} />
+        </a>
+      </div>
+    </main>
+  );
 }
-
-.container {
-    text-align: center;
-}
-
-.logo {
-    width: 140px;
-    margin-bottom: 40px;
-}
-
-.qr {
-    margin: 22px 0;
-}
-
-.qr img {
-    width: 86px;
-    height: 86px;
-}
-
-.label {
-    font-size: 12px;
-    color: #333;
-    margin-top: 6px;
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<!-- 双魚ロゴ -->
-<img src="public/logo.png" class="logo" alt="クラウン商会">
-
-<!-- 行列ウォッチ -->
-<div class="qr">
-<img src="public/qr/queue.png" alt="行列ウォッチ">
-<div class="label">行列ウォッチ</div>
-</div>
-
-<!-- クラウン商会 -->
-<div class="qr">
-<img src="public/qr/kondake.png" alt="クラウン商会">
-<div class="label">クラウン商会</div>
-</div>
-
-<!-- PG -->
-<div class="qr">
-<img src="public/qr/pg.png" alt="PG">
-<div class="label">PG</div>
-</div>
-
-</div>
-
-</body>
-</html>
