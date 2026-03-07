@@ -97,22 +97,22 @@ export default function Home() {
           </div>
         </Link>
 
-        {/* 今日どこ行った？（準備中） */}
+             {/* 今日どこ行った？ */}
         <div style={{ textAlign: "center" }}>
           <div
             style={{
               width: "132px",
               height: "132px",
-              border: `2px dashed ${BLUE}`,
+              background: "#EFE7DB",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              color: BLUE,
+              color: "#888",
               fontSize: "12px",
-              userSelect: "none",
+              letterSpacing: "0.04em",
             }}
           >
-            QR準備中
+            coming soon
           </div>
           <div
             style={{
