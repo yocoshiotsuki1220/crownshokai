@@ -18,7 +18,6 @@ export default function Home() {
         padding: "48px 20px",
       }}
     >
-      {/* 双魚ロゴ（でかめ） */}
       <div style={{ marginBottom: "44px" }}>
         <Image
           src="/logo.png"
@@ -30,7 +29,6 @@ export default function Home() {
         />
       </div>
 
-      {/* QR群 */}
       <div
         style={{
           display: "flex",
@@ -41,84 +39,115 @@ export default function Home() {
           maxWidth: "520px",
         }}
       >
-{/* 行列ウォッチ */}
-<Link
-  href="https://queue.crownshokai.jp"
-  style={{
-    textAlign: "center",
-    textDecoration: "none",
-    color: "inherit",
-  }}
->
-  <Image
-    src="/qr/queue.png"
-    alt="行列ウォッチ"
-    width={132}
-    height={132}
-    style={{ display: "block" }}
-  />
-  <div
-    style={{
-      marginTop: "10px",
-      fontSize: "14px",
-      color: TEXT,
-      letterSpacing: "0.02em",
-    }}
-  >
-    行列ウォッチ
-  </div>
+        <Link
+          href="https://queue.crownshokai.jp"
+          style={{
+            textAlign: "center",
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
+          <Image
+            src="/qr/queue.png"
+            alt="行列ウォッチ"
+            width={132}
+            height={132}
+            style={{ display: "block" }}
+          />
+          <div
+            style={{
+              marginTop: "10px",
+              fontSize: "14px",
+              color: TEXT,
+              letterSpacing: "0.02em",
+            }}
+          >
+            行列ウォッチ
+          </div>
+          <div
+            style={{
+              marginTop: "6px",
+              fontSize: "12px",
+              color: "#666",
+              letterSpacing: "0.02em",
+            }}
+          >
+            見かけたら、教えてね
+          </div>
+        </Link>
 
-  {/* ←ここ追加 */}
-  <div
-    style={{
-      marginTop: "6px",
-      fontSize: "12px",
-      color: "#666",
-      letterSpacing: "0.02em",
-    }}
-  >
-    見かけたら、教えてね
-  </div>
-</Link>
-{/* こんだけ */}
-<Link
-  href="https://kondake.crownshokai.jp"
-  style={{
-    textAlign: "center",
-    textDecoration: "none",
-    color: "inherit",
-  }}
->
-  <Image
-    src="/qr/kondake.png"
-    alt="こんだけ"
-    width={132}
-    height={132}
-    style={{ display: "block" }}
-  />
-  <div
-    style={{
-      marginTop: "10px",
-      fontSize: "14px",
-      color: TEXT,
-      letterSpacing: "0.02em",
-    }}
-  >
-    こんだけ
-  </div>
+        <Link
+          href="https://kondake.crownshokai.jp"
+          style={{
+            textAlign: "center",
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
+          <Image
+            src="/qr/kondake.png"
+            alt="こんだけ"
+            width={132}
+            height={132}
+            style={{ display: "block" }}
+          />
+          <div
+            style={{
+              marginTop: "10px",
+              fontSize: "14px",
+              color: TEXT,
+              letterSpacing: "0.02em",
+            }}
+          >
+            こんだけ
+          </div>
+          <div
+            style={{
+              marginTop: "6px",
+              fontSize: "12px",
+              color: "#666",
+              letterSpacing: "0.02em",
+            }}
+          >
+            なにしてた？
+          </div>
+        </Link>
 
-  {/* ←ここ追加 */}
-  <div
-    style={{
-      marginTop: "6px",
-      fontSize: "12px",
-      color: "#666",
-      letterSpacing: "0.02em",
-    }}
-  >
-    なにしてた？
-  </div>
-</Link>            今日どこ行った？
+        <div style={{ textAlign: "center" }}>
+          <div
+            style={{
+              width: "132px",
+              height: "132px",
+              background: "#EFE7DB",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "#888",
+              fontSize: "12px",
+              letterSpacing: "0.04em",
+            }}
+          >
+            coming soon
+          </div>
+          <div
+            style={{
+              marginTop: "10px",
+              fontSize: "14px",
+              color: TEXT,
+              letterSpacing: "0.02em",
+            }}
+          >
+            今日どこ行った？
+          </div>
+          <div
+            style={{
+              marginTop: "6px",
+              fontSize: "12px",
+              color: "#666",
+              letterSpacing: "0.02em",
+            }}
+          >
+            どこ行ってた？
           </div>
         </div>
       </div>
