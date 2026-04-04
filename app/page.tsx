@@ -113,22 +113,21 @@ export default function Home() {
           </div>
         </Link>
 
-        <div style={{ textAlign: "center" }}>
-          <div
-            style={{
-              width: "132px",
-              height: "132px",
-              background: "#EFE7DB",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#888",
-              fontSize: "12px",
-              letterSpacing: "0.04em",
-            }}
-          >
-            coming soon
-          </div>
+        <Link
+          href="https://today.crownshokai.jp"
+          style={{
+            textAlign: "center",
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
+          <Image
+            src="/qr/today.png"
+            alt="今日！"
+            width={132}
+            height={132}
+            style={{ display: "block" }}
+          />
           <div
             style={{
               marginTop: "10px",
@@ -137,7 +136,7 @@ export default function Home() {
               letterSpacing: "0.02em",
             }}
           >
-            今日どこ行った？
+            今日！
           </div>
           <div
             style={{
@@ -149,7 +148,7 @@ export default function Home() {
           >
             どこ行ってた？
           </div>
-        </div>
+        </Link>
       </div>
     </main>
   );
