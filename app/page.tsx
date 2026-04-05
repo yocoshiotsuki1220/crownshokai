@@ -146,7 +146,7 @@ export default function Home() {
               letterSpacing: "0.02em",
             }}
           >
-            どこ行ってた？
+            やった？
           </div>
         </Link>
       </div>
